@@ -136,7 +136,7 @@ nav {
     display: flex;
     justify-content: space-around;
     padding-top: 1.8rem;
-   
+
 }
 
 nav .interactions ul {
@@ -156,6 +156,184 @@ nav .interactions ul li {
 }
 
 /* nav- */
+
+/* prebook+ */
+.prebook-now {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+    gap: 5rem;
+}
+
+.prebook-content {
+    margin-top: 7rem;
+    margin-right: 200px;
+}
+
+.prebook-headline {
+    color: rgb(58, 58, 58);
+
+    font-family: Poppins;
+
+    font-size: 52px;
+
+    font-weight: 700;
+}
+
+.prebook-description {
+    color: rgb(58, 58, 58);
+
+    font-family: Poppins;
+
+    font-size: 16px;
+
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.prebook-btn {
+    color: rgb(255, 255, 255);
+
+    font-family: Poppins;
+
+    font-size: 16px;
+
+    font-weight: 700;
+    border-radius: 41px;
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    border: 0;
+    background: rgb(224, 44, 109);
+}
+
+.prebook-img {
+    margin-top: 7rem;
+    background-image: url(/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    padding: 25px;
+}
+
+.divider {
+    margin-top: 200px;
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.378%, rgba(192, 204, 218, 0.1) 100%);
+    width: 50%;
+}
+
+
+
+/* prebook- */
+
+/* sponsors+ */
+.sponsors {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+
+}
+
+.sponsors div {
+    display: flex;
+
+}
+
+/* sponsors- */
+
+/* main+ */
+/* popular+ */
+
+.popular-tag {
+    color: rgb(58, 58, 58);
+
+    font-family: Poppins;
+
+    font-size: 28px;
+
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    gap: 10px;
+    
+    justify-content: center;
+
+}
+
+.popular-container {
+    border-radius: 5px;
+
+
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+
+    background: rgb(255, 255, 255);
+    padding: 17px;
+
+}
+
+.popular-container h3 {
+    color: rgb(24, 25, 31);
+
+    font-family: Poppins;
+
+    font-size: 28px;
+
+    font-weight: 500;
+}
+
+.popular-container h4 {
+    color: rgba(0, 0, 0, 0.87);
+
+    font-family: Inter;
+
+    font-size: 24px;
+
+    font-weight: 400;
+}
+
+.popular-container p {
+    color: rgb(120, 120, 133);
+
+    font-family: Inter;
+
+    font-size: 14px;
+
+    font-weight: 700;
+    padding: 0px 100px 5px 0px;
+}
+
+.star {
+    width: 11.07px;
+
+    height: 10.32px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* popular- */
+
+
+
+
+
+
+/* main- */
+
+
+
+
+
+
+
 /* body- */
 
 
@@ -165,22 +343,61 @@ nav .interactions ul li {
 
 /* responsive small+ */
 @media screen and (max-width: 576px) {
-    nav{
+    nav {
         display: flex;
         flex-direction: column;
     }
-    .page-title{
-       text-align: center;
+
+    .page-title {
+        text-align: center;
     }
-    nav .interactions ul{
-      
-     
-      padding: 0;
-      justify-content: center;
-      
-      gap: 25px;
+
+    nav .interactions ul {
+        padding: 0;
+        justify-content: center;
+        gap: 20px;
     }
-    
-    
+
+    .prebook-now {
+        flex-direction: column-reverse;
+        /* width: 100%; */
+        padding: 5px;
+        align-items: center;
+    }
+
+    .prebook-img {
+        margin: 0;
+    }
+
+    .prebook-headline {
+        text-align: center;
+    }
+
+    .prebook-content {
+        margin: 0;
+        text-align: center;
+    }
+
+    header hr {
+        display: none;
+    }
+
+    .sponsors {
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    .popular-grid{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    .popular-container{
+        padding: 40px;
+    }
+
+
+
+
+
 }
+
 /* responsive small- */
